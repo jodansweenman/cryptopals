@@ -65,7 +65,6 @@ string hexor(string init_hex, string mask_hex) {
             uint16_t mask_num = stoi(mask_temp, 0, 16);
             uint16_t result_num = init_num ^ mask_num;
             ss << hex << result_num;
-            result.append(ss.str());
         }
         result = ss.str();
         cout << "Nice job! Results below!" << endl;
